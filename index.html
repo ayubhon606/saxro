@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SAHRO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..700&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="coat" viewBox="0 0 200 260">
+      <path class="fl" d="M68 30Q100 52 132 30L152 40 158 236 100 242 42 236 48 40Z"/>
+      <path class="fl" d="M50 40L28 54 12 198 42 204 54 112Z"/>
+      <path class="fl" d="M150 40L172 54 188 198 158 204 146 112Z"/>
+      <path class="ln" d="M68 30L100 128 132 30M100 128V242M54 112L42 204M146 112L158 204"/>
+      <circle class="ln" cx="108" cy="152" r="2.6"/><circle class="ln" cx="108" cy="182" r="2.6"/><circle class="ln" cx="108" cy="212" r="2.6"/>
+    </symbol>
+    <symbol id="shirt" viewBox="0 0 200 260">
+      <path class="fl" d="M70 34Q100 52 130 34L170 56 186 118 160 130 154 108 152 226 100 230 48 226 46 108 40 130 14 118 30 56Z"/>
+      <path class="ln" d="M70 34L100 78 130 34M100 78V230M46 108L40 130M154 108L160 130M118 100H140V122H118Z"/>
+      <circle class="ln" cx="106" cy="108" r="2"/><circle class="ln" cx="106" cy="148" r="2"/><circle class="ln" cx="106" cy="188" r="2"/>
+    </symbol>
+    <symbol id="knit" viewBox="0 0 200 260">
+      <path class="fl" d="M72 30Q100 46 128 30L168 52 186 170 158 180 152 98 150 226 100 230 50 226 48 98 42 180 14 170 32 52Z"/>
+      <path class="ln" d="M72 30Q100 64 128 30M50 204H150M50 213H150M50 222H150M42 160L14 150M158 160L186 150"/>
+    </symbol>
+    <symbol id="pants" viewBox="0 0 200 300">
+      <path class="fl" d="M52 12H148L162 288H108L100 112 92 288H38Z"/>
+      <path class="ln" d="M52 34H148M100 34V112M74 60L62 282M126 60L138 282"/>
+    </symbol>
+    <symbol id="bag" viewBox="0 0 200 260">
+      <path d="M68 98C68 28 132 28 132 98" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+      <path class="fl" d="M42 92H158L168 240H32Z"/>
+      <path class="ln" d="M42 126H158M60 150H140"/>
+    </symbol>
+    <symbol id="figA" viewBox="0 0 200 340">
+      <circle cx="100" cy="26" r="16" fill="#9C9C99"/>
+      <use href="#pants" x="48" y="170" width="104" height="156" style="color:#0A0A0A"/>
+      <use href="#coat" x="14" y="14" width="172" height="224" style="color:#F3F3F1"/>
+    </symbol>
+    <symbol id="figB" viewBox="0 0 200 340">
+      <circle cx="100" cy="32" r="15" fill="#9C9C99"/>
+      <use href="#pants" x="54" y="165" width="92" height="138" style="color:#2A2A2A"/>
+      <use href="#shirt" x="36" y="22" width="128" height="166" style="color:#F3F3F1"/>
+    </symbol>
+    <symbol id="figC" viewBox="0 0 200 340">
+      <circle cx="100" cy="28" r="16" fill="#9C9C99"/>
+      <use href="#pants" x="52" y="150" width="96" height="144" style="color:#2A2A2A"/>
+      <use href="#knit" x="30" y="20" width="140" height="182" style="color:#0A0A0A"/>
+      <use href="#bag" x="4" y="178" width="56" height="73" style="color:#2A2A2A"/>
+    </symbol>
+    <symbol id="sc1" viewBox="0 0 400 800">
+      <rect width="400" height="800" fill="#0A0A0A"/>
+      <circle cx="290" cy="230" r="84" fill="#F3F3F1"/>
+      <path d="M0 640Q110 560 230 610T400 590V800H0Z" fill="#BDBDBA"/>
+      <path d="M0 700Q140 640 260 690T400 670V800H0Z" fill="#D9D9D6"/>
+      <path d="M0 765Q120 725 240 755T400 745V800H0Z" fill="#F3F3F1"/>
+      <ellipse cx="198" cy="700" rx="92" ry="9" fill="#111111" opacity=".2"/>
+      <use href="#figA" x="86" y="332" width="224" height="381"/>
+    </symbol>
+    <symbol id="sc2" viewBox="0 0 400 800">
+      <rect width="400" height="800" fill="#2A2A2A"/>
+      <path d="M60 800V330A140 140 0 0 1 340 330V800Z" fill="#F3F3F1"/>
+      <path d="M104 800V340A96 96 0 0 1 296 340V800Z" fill="#0A0A0A"/>
+      <circle cx="200" cy="300" r="26" fill="#F3F3F1"/>
+      <path d="M0 730H400V800H0Z" fill="#0C0C0C"/>
+      <ellipse cx="200" cy="716" rx="72" ry="8" fill="#000" opacity=".28"/>
+      <use href="#figB" x="90" y="380" width="220" height="374"/>
+    </symbol>
+    <symbol id="sc3" viewBox="0 0 400 800">
+      <rect width="400" height="800" fill="#D9D9D6"/>
+      <circle cx="120" cy="250" r="62" fill="#F3F3F1"/>
+      <ellipse cx="318" cy="520" rx="34" ry="170" fill="#2A2A2A"/>
+      <ellipse cx="258" cy="570" rx="26" ry="120" fill="#0C0C0C"/>
+      <rect y="690" width="400" height="110" fill="#0A0A0A"/>
+      <path d="M30 735H150M200 755H340M60 778H200" stroke="#F3F3F1" stroke-width="3" opacity=".55" stroke-linecap="round" fill="none"/>
+      <path d="M0 690H400" stroke="#BDBDBA" stroke-width="6"/>
+      <ellipse cx="170" cy="692" rx="82" ry="7" fill="#111111" opacity=".22"/>
+      <use href="#figC" x="62" y="372" width="216" height="367"/>
+    </symbol>
+    <symbol id="sc4" viewBox="0 0 400 800">
+      <rect width="400" height="800" fill="#BDBDBA"/>
+      <rect y="700" width="400" height="100" fill="#A9A9A6"/>
+      <path d="M40 150H360M40 150V700M360 150V700" stroke="#111111" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M105 150V164M205 150V164M307 150V164" stroke="#111111" stroke-width="3" fill="none"/>
+      <use href="#coat" x="46" y="160" width="118" height="153" style="color:#2A2A2A"/>
+      <use href="#shirt" x="148" y="164" width="114" height="148" style="color:#0A0A0A"/>
+      <use href="#knit" x="250" y="164" width="114" height="148" style="color:#F3F3F1"/>
+      <rect x="70" y="502" width="120" height="18" fill="#0A0A0A"/><rect x="76" y="484" width="108" height="18" fill="#F3F3F1"/><rect x="70" y="466" width="120" height="18" fill="#2A2A2A"/>
+      <rect x="220" y="502" width="110" height="18" fill="#F3F3F1"/><rect x="226" y="484" width="98" height="18" fill="#2A2A2A"/><rect x="220" y="466" width="110" height="18" fill="#0A0A0A"/>
+      <rect x="40" y="520" width="320" height="6" fill="#111111"/>
+      <ellipse cx="200" cy="722" rx="72" ry="8" fill="#111111" opacity=".2"/>
+      <use href="#bag" x="150" y="592" width="100" height="130" style="color:#0A0A0A"/>
+    </symbol>
+    <symbol id="sc5" viewBox="0 0 400 800">
+      <rect width="400" height="800" fill="#0C0C0C"/>
+      <circle cx="150" cy="200" r="68" fill="#F3F3F1"/>
+      <circle cx="182" cy="186" r="60" fill="#0C0C0C"/>
+      <g fill="#F3F3F1"><circle cx="300" cy="120" r="2.5"/><circle cx="340" cy="220" r="2"/><circle cx="60" cy="110" r="2"/><circle cx="90" cy="300" r="2.5"/><circle cx="260" cy="300" r="2"/><circle cx="350" cy="340" r="2.5"/><circle cx="40" cy="230" r="2"/></g>
+      <path d="M10 730V470A60 60 0 0 1 130 470V730Z" fill="#0A0A0A"/>
+      <path d="M270 730V470A60 60 0 0 1 390 470V730Z" fill="#0A0A0A"/>
+      <path d="M0 730H400V800H0Z" fill="#2A2A2A"/>
+      <ellipse cx="200" cy="728" rx="76" ry="8" fill="#000" opacity=".3"/>
+      <use href="#figA" x="90" y="366" width="220" height="374"/>
+    </symbol>
+    <symbol id="scW" viewBox="0 0 1600 900">
+      <rect width="1600" height="900" fill="#0A0A0A"/>
+      <circle cx="1130" cy="520" r="330" fill="#F3F3F1" opacity=".12"/>
+      <circle cx="1130" cy="520" r="190" fill="#F3F3F1"/>
+      <path d="M0 640Q300 520 620 600T1240 580T1600 560V900H0Z" fill="#BDBDBA"/>
+      <path d="M0 740Q380 640 760 720T1600 690V900H0Z" fill="#D9D9D6"/>
+      <path d="M0 840Q420 780 880 830T1600 800V900H0Z" fill="#F3F3F1"/>
+      <ellipse cx="470" cy="832" rx="120" ry="11" fill="#111111" opacity=".2"/>
+      <ellipse cx="690" cy="826" rx="92" ry="9" fill="#111111" opacity=".2"/>
+      <use href="#figA" x="380" y="530" width="180" height="306"/>
+      <use href="#figB" x="630" y="590" width="120" height="204"/>
+      <ellipse cx="1380" cy="640" rx="26" ry="130" fill="#2A2A2A"/>
+      <ellipse cx="1440" cy="660" rx="20" ry="96" fill="#0C0C0C"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<div class="pre" id="pre" aria-hidden="true">
+  <div class="pre-in">
+    <p class="eyebrow">Qish 2026 · Toshkent</p>
+    <div class="pre-word"><span style="--i:0">S</span><span style="--i:1">A</span><span style="--i:2">H</span><span style="--i:3">R</span><span style="--i:4">O</span></div>
+    <div class="pre-n"><span id="preN">0</span>%</div>
+  </div>
+  <div class="pre-bar"><i id="preBar"></i></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cur-dot" id="curDot" aria-hidden="true"></div>
+<div class="cur-ring" id="curRing" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="SAHRO, bosh sahifa">SAHRO</a>
+  <nav class="links" id="links" aria-label="Asosiy menyu">
+    <a href="#kolleksiya">Kolleksiya</a>
+    <a href="#falsafa">Falsafa</a>
+    <a href="#hikoya">Hikoya</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#jurnal">Jurnal</a>
+    <a href="#matolar">Matolar</a>
+  </nav>
+  <div class="nav-r">
+    <button class="cartbtn" id="openCart" type="button" aria-controls="drawer">Savat <span id="cartCount">0</span></button>
+    <button class="menubtn" id="menuBtn" type="button" aria-expanded="false" aria-controls="links">Menyu</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <canvas id="dunes" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-top eyebrow"><span>Kiyim jurnali</span><span>Qish 2026</span><span>Toshkent <b id="clock">--:--</b></span></div>
+      <h1 class="hero-word" aria-label="SAHRO">
+        <span class="l" style="--i:0" aria-hidden="true"><i>S</i></span>
+        <span class="l" style="--i:1" aria-hidden="true"><i>A</i></span>
+        <span class="l" style="--i:2" aria-hidden="true"><i>H</i></span>
+        <span class="l" style="--i:3" aria-hidden="true"><i>R</i></span>
+        <span class="l" style="--i:4" aria-hidden="true"><i>O</i></span>
+      </h1>
+
+      <div class="hero-stage">
+        <div class="badge" aria-hidden="true"><svg viewBox="0 0 100 100"><defs><path id="bp" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1 -76 0"/></defs><text><textPath href="#bp" textLength="236" lengthAdjust="spacing">SAHRO · QISH 2026 · TOSHKENT · SOKIN MODA · </textPath></text><circle cx="50" cy="50" r="5"/></svg></div>
+        <div class="arch short cr" data-hero="0.05" style="--d:.5s" role="img" aria-label="Kamar ichida turgan odam">
+          <svg class="sc" viewBox="0 0 400 800" preserveAspectRatio="xMidYMax slice"><use href="#sc2"/></svg>
+        </div>
+        <div class="arch tall cr" data-hero="0.16" style="--d:.65s" role="img" aria-label="Oq tosh ustida turgan odam, qora osmon">
+          <svg class="sc" viewBox="0 0 400 800" preserveAspectRatio="xMidYMax slice"><use href="#sc1"/></svg>
+        </div>
+        <div class="arch mid cr" data-hero="0.09" style="--d:.8s" role="img" aria-label="Voha va suv bo‘yidagi odam">
+          <svg class="sc" viewBox="0 0 400 800" preserveAspectRatio="xMidYMax slice"><use href="#sc3"/></svg>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <p class="rv">Besh buyum, uch rang, bitta sokin siluet. Qish 2026 kolleksiyasi Toshkentda tikildi.</p>
+        <div class="acts rv" style="--d:.15s">
+          <a class="btn" href="#kolleksiya">Kolleksiyani ko‘rish</a>
+          <a class="btn ghost" href="#lookbook">Lookbook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mq" data-dir="l" aria-hidden="true">
+    <div class="mq-track">
+      <div class="mq-g"><span>Sokin moda</span><b></b><span><em>Slow</em> fashion</span><b></b><span>Toshkentda tikilgan</span><b></b><span>Tabiiy tola</span><b></b></div>
+      <div class="mq-g"><span>Sokin moda</span><b></b><span><em>Slow</em> fashion</span><b></b><span>Toshkentda tikilgan</span><b></b><span>Tabiiy tola</span><b></b></div>
+    </div>
+  </div>
+
+  <section class="strip" id="kadrlar" aria-label="Kadrlar">
+    <div class="wrap">
+      <div class="look-head">
+        <h2 class="h2 rv">Cho‘ldan <em>olingan</em> kadrlar</h2>
+        <p class="eyebrow rv" style="--d:.1s">Qish 2026 · Fotoseriya</p>
+      </div>
+      <div class="strip-grid">
+        <figure class="fig" data-par="0.04">
+          <div class="pic cr" role="img" aria-label="Oq tosh ustida palto kiygan odam"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice"><use href="#sc1"/></svg></div>
+          <figcaption><b>Oq tosh</b><span>Vohat palto</span></figcaption>
+        </figure>
+        <figure class="fig" data-par="0.1">
+          <div class="pic cr" style="--d:.1s" role="img" aria-label="Kamar ichida ko‘ylak kiygan odam"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice"><use href="#sc2"/></svg></div>
+          <figcaption><b>Kamar</b><span>Oq ko‘ylak</span></figcaption>
+        </figure>
+        <figure class="fig" data-par="0.02">
+          <div class="pic cr" style="--d:.2s" role="img" aria-label="Suv bo‘yida sviter kiygan odam"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice"><use href="#sc3"/></svg></div>
+          <figcaption><b>Voha</b><span>Sarob sviter</span></figcaption>
+        </figure>
+        <figure class="fig" data-par="0.13">
+          <div class="pic cr" style="--d:.3s" role="img" aria-label="Tunda palto kiygan odam"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice"><use href="#sc5"/></svg></div>
+          <figcaption><b>Tun</b><span>Vohat palto</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="mani-sec" id="falsafa">
+    <div class="wrap">
+      <p class="eyebrow rv">Falsafa</p>
+      <p class="mani" id="mani">Biz ko‘p kiyim emas, to‘g‘ri kiyim tikamiz. Faqat oq, qora va kul rang. Uch ton, sokin siluet va yillar davomida eskirmaydigan mato.</p>
+      <div class="values">
+        <div data-par="0.05"><div class="rv"><h3>Kam buyum</h3><p>Har fasl uchun besh-yetti model. Ortiqcha zaxira va keraksiz ko‘paytirish yo‘q.</p></div></div>
+        <div data-par="0.1"><div class="rv" style="--d:.1s"><h3>Tabiiy tola</h3><p>Paxta, lyon va merinos. Sintetik aralashma ishlatilmaydi.</p></div></div>
+        <div data-par="0.15"><div class="rv" style="--d:.2s"><h3>Toshkentda tikilgan</h3><p>Kichik ustaxonada, har bir buyum bitta tikuvchining qo‘lidan chiqadi.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story" id="hikoya" aria-label="Uch rang hikoyasi">
+    <div class="wrap">
+      <div class="story-grid">
+        <div class="story-vis">
+          <div class="story-frame">
+            <div class="scene on"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Oq rang sahnasi"><use href="#sc1"/></svg></div>
+            <div class="scene"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Qora rang sahnasi"><use href="#sc2"/></svg></div>
+            <div class="scene"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kul rang sahnasi"><use href="#sc3"/></svg></div>
+            <p class="eyebrow story-tag" id="storyTag">Oq</p>
+          </div>
+        </div>
+        <div class="story-steps">
+          <div class="step on" data-s="0" data-name="Oq"><p class="eyebrow">Birinchi rang</p><h3 class="h2">Oq</h3><p>Qor va yorug‘lik rangi. Palto va sviterlar uchun asos: toza, sokin va ko‘zni hech qachon charchatmaydi.</p></div>
+          <div class="step" data-s="1" data-name="Qora"><p class="eyebrow">Ikkinchi rang</p><h3 class="h2">Qora</h3><p>Tunning eng chuqur tusi. Har bir siluetga bitta aniq urg‘u beradi, ortiqcha bezaksiz.</p></div>
+          <div class="step" data-s="2" data-name="Kul rang"><p class="eyebrow">Uchinchi rang</p><h3 class="h2">Kul</h3><p>Tosh va tuman rangi. Shim va sumkalar uchun chuqur, tinch fon.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hs sec-moss on-dark" id="kolleksiya" aria-label="Qish kolleksiyasi">
+    <div class="hs-stick">
+      <div class="wrap">
+        <div class="hs-head">
+          <h2 class="h2">Qish <em>kolleksiyasi</em></h2>
+          <p class="eyebrow hs-hint">Pastga aylantiring, kolleksiya yonga suriladi</p>
+        </div>
+        <div class="hs-line"><i id="hsBar"></i></div>
+      </div>
+      <div class="hs-track" id="hsTrack">
+        <article class="card" data-name="Vohat palto" data-price="3450000" data-c="sand">
+          <div class="arch" role="img" aria-label="Vohat palto"><svg class="gm" viewBox="0 0 200 260"><use href="#coat"/></svg></div>
+          <div class="row"><h3>Vohat palto</h3><span class="price">3 450 000 so‘m</span></div>
+          <p class="fab">Merinos yung drap · 520 g/m²</p>
+          <div class="buy">
+            <div class="dots" role="group" aria-label="Rang tanlash">
+              <button type="button" data-set="sand" aria-label="Oq" aria-pressed="true" style="--d:#F3F3F1"></button>
+              <button type="button" data-set="cobalt" aria-label="Qora" aria-pressed="false" style="--d:#0A0A0A"></button>
+              <button type="button" data-set="moss" aria-label="Kul rang" aria-pressed="false" style="--d:#2A2A2A"></button>
+            </div>
+            <button class="btn ghost sm" type="button" data-add>Savatga</button>
+          </div>
+        </article>
+        <article class="card" data-name="Oq ko‘ylak" data-price="690000" data-c="cobalt">
+          <div class="arch" role="img" aria-label="Oq ko‘ylak"><svg class="gm" viewBox="0 0 200 260"><use href="#shirt"/></svg></div>
+          <div class="row"><h3>Oq ko‘ylak</h3><span class="price">690 000 so‘m</span></div>
+          <p class="fab">Paxta poplin · 140 g/m²</p>
+          <div class="buy">
+            <div class="dots" role="group" aria-label="Rang tanlash">
+              <button type="button" data-set="sand" aria-label="Oq" aria-pressed="false" style="--d:#F3F3F1"></button>
+              <button type="button" data-set="cobalt" aria-label="Qora" aria-pressed="true" style="--d:#0A0A0A"></button>
+              <button type="button" data-set="moss" aria-label="Kul rang" aria-pressed="false" style="--d:#2A2A2A"></button>
+            </div>
+            <button class="btn ghost sm" type="button" data-add>Savatga</button>
+          </div>
+        </article>
+        <article class="card" data-name="Tosh shim" data-price="890000" data-c="moss">
+          <div class="arch" role="img" aria-label="Tosh shim"><svg class="gm" viewBox="0 0 200 300" style="bottom:4%"><use href="#pants"/></svg></div>
+          <div class="row"><h3>Tosh shim</h3><span class="price">890 000 so‘m</span></div>
+          <p class="fab">Lyon · 190 g/m²</p>
+          <div class="buy">
+            <div class="dots" role="group" aria-label="Rang tanlash">
+              <button type="button" data-set="sand" aria-label="Oq" aria-pressed="false" style="--d:#F3F3F1"></button>
+              <button type="button" data-set="cobalt" aria-label="Qora" aria-pressed="false" style="--d:#0A0A0A"></button>
+              <button type="button" data-set="moss" aria-label="Kul rang" aria-pressed="true" style="--d:#2A2A2A"></button>
+            </div>
+            <button class="btn ghost sm" type="button" data-add>Savatga</button>
+          </div>
+        </article>
+        <article class="card" data-name="Sarob sviter" data-price="1190000" data-c="sand">
+          <div class="arch" role="img" aria-label="Sarob sviter"><svg class="gm" viewBox="0 0 200 260"><use href="#knit"/></svg></div>
+          <div class="row"><h3>Sarob sviter</h3><span class="price">1 190 000 so‘m</span></div>
+          <p class="fab">Merinos trikotaj · 320 g/m²</p>
+          <div class="buy">
+            <div class="dots" role="group" aria-label="Rang tanlash">
+              <button type="button" data-set="sand" aria-label="Oq" aria-pressed="true" style="--d:#F3F3F1"></button>
+              <button type="button" data-set="cobalt" aria-label="Qora" aria-pressed="false" style="--d:#0A0A0A"></button>
+              <button type="button" data-set="moss" aria-label="Kul rang" aria-pressed="false" style="--d:#2A2A2A"></button>
+            </div>
+            <button class="btn ghost sm" type="button" data-add>Savatga</button>
+          </div>
+        </article>
+        <article class="card" data-name="Soya sumka" data-price="520000" data-c="cobalt">
+          <div class="arch" role="img" aria-label="Soya sumka"><svg class="gm" viewBox="0 0 200 260"><use href="#bag"/></svg></div>
+          <div class="row"><h3>Soya sumka</h3><span class="price">520 000 so‘m</span></div>
+          <p class="fab">Qalin kanvas · 480 g/m²</p>
+          <div class="buy">
+            <div class="dots" role="group" aria-label="Rang tanlash">
+              <button type="button" data-set="sand" aria-label="Oq" aria-pressed="false" style="--d:#F3F3F1"></button>
+              <button type="button" data-set="cobalt" aria-label="Qora" aria-pressed="true" style="--d:#0A0A0A"></button>
+              <button type="button" data-set="moss" aria-label="Kul rang" aria-pressed="false" style="--d:#2A2A2A"></button>
+            </div>
+            <button class="btn ghost sm" type="button" data-add>Savatga</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="look-sec" id="lookbook">
+    <div class="wrap">
+      <div class="look-head">
+        <h2 class="h2 rv">Bir kun, <em>uch</em> obraz</h2>
+        <p class="eyebrow rv" style="--d:.1s">Lookbook · Qish 2026</p>
+      </div>
+
+      <div class="look" style="--i:0">
+        <div class="look-in" style="--cb:var(--cobalt);--ct:var(--sand);--lp:var(--sand)">
+          <div class="arch cr" role="img" aria-label="Sarob sviter va Tosh shim kiyilgan obraz">
+            <svg viewBox="0 0 200 340" style="color:var(--moss)">
+              <use href="#pants" x="52" y="150" width="96" height="144" style="color:var(--moss)"/>
+              <use href="#knit" x="30" y="20" width="140" height="182" style="color:var(--cobalt)"/>
+            </svg>
+          </div>
+          <div><p class="eyebrow">Tong · 07:30</p><h3>Sarob sviter va Tosh shim</h3><p>Ertalabki yo‘l uchun: yumshoq merinos va keng lyon shim. Ikki qatlam, uch rang, ortiqcha hech narsa yo‘q.</p></div>
+        </div>
+      </div>
+
+      <div class="look" style="--i:1">
+        <div class="look-in" style="--cb:var(--sand-3);--ct:var(--ink);--lp:var(--moss)">
+          <div class="arch cr" role="img" aria-label="Vohat palto va Tosh shim kiyilgan obraz">
+            <svg viewBox="0 0 200 340">
+              <use href="#pants" x="48" y="170" width="104" height="156" style="color:var(--cobalt)"/>
+              <use href="#coat" x="14" y="14" width="172" height="224" style="color:var(--sand)"/>
+            </svg>
+          </div>
+          <div><p class="eyebrow">Kun · 13:00</p><h3>Vohat palto va Tosh shim</h3><p>Shahar bo‘ylab piyoda yurish uchun: tizzadan pastga tushadigan drap palto va ichida oddiy qora shim.</p></div>
+        </div>
+      </div>
+
+      <div class="look" style="--i:2">
+        <div class="look-in" style="--cb:var(--moss);--ct:var(--sand);--lp:var(--cobalt)">
+          <div class="arch cr" role="img" aria-label="Oq ko‘ylak, Tosh shim va Soya sumka obrazi">
+            <svg viewBox="0 0 200 340">
+              <use href="#pants" x="54" y="165" width="92" height="138" style="color:var(--moss)"/>
+              <use href="#shirt" x="36" y="22" width="128" height="166" style="color:var(--sand)"/>
+              <use href="#bag" x="6" y="172" width="58" height="75" style="color:var(--sand)"/>
+            </svg>
+          </div>
+          <div><p class="eyebrow">Oqshom · 19:45</p><h3>Oq ko‘ylak va Soya sumka</h3><p>Kechki uchrashuv uchun: yengil poplin ko‘ylak, qalin kanvas sumka va kul shim.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="mq alt" data-dir="r" aria-hidden="true">
+    <div class="mq-track">
+      <div class="mq-g"><span>Oq</span><b></b><span><em>Qora</em></span><b></b><span>Kul</span><b></b><span><em>Sokin</em> siluet</span><b></b></div>
+      <div class="mq-g"><span>Oq</span><b></b><span><em>Qora</em></span><b></b><span>Kul</span><b></b><span><em>Sokin</em> siluet</span><b></b></div>
+    </div>
+  </div>
+
+  <section class="portal" id="eshik" aria-label="Cho‘lga eshik">
+    <div class="portal-stick">
+      <p class="eyebrow portal-pre" id="portalPre">Aylantiring, eshik ochiladi</p>
+      <div class="portal-win" id="portalWin">
+        <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Cho‘lda ikki odam, ufqda quyosh"><use href="#scW"/></svg>
+        <div class="portal-txt" id="portalTxt">
+          <p class="eyebrow">Qish 2026</p>
+          <h2 class="h2">Cho‘l seni <em>kutmoqda</em></h2>
+          <a class="btn" href="#kolleksiya">Kolleksiyaga qaytish</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="journal sec-moss on-dark" id="jurnal">
+    <div class="wrap">
+      <div class="look-head">
+        <h2 class="h2 rv">SAHRO <em>jurnali</em></h2>
+        <p class="eyebrow rv" style="--d:.1s">Maqolalar · Tez orada</p>
+      </div>
+      <div class="j-grid">
+        <article class="jc">
+          <div class="pic cr" role="img" aria-label="Tunda palto kiygan odam"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice"><use href="#sc5"/></svg></div>
+          <p class="eyebrow rv">Uslub</p>
+          <h3 class="rv">Cho‘lda kiyinish san’ati</h3>
+          <p class="rv">Qatlam, rang va mato: kunduzi issiq, kechasi sovuq joyda qanday kiyinish kerak.</p>
+          <span class="meta rv">6 daqiqa · Tez orada</span>
+        </article>
+        <article class="jc">
+          <div class="pic cr" style="--d:.12s" role="img" aria-label="Kiyim osilgan stend"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice"><use href="#sc4"/></svg></div>
+          <p class="eyebrow rv">Mato</p>
+          <h3 class="rv">Merinos nega tikmaydi</h3>
+          <p class="rv">18 mikronli tola va uning kundalik kiyimdagi o‘rni haqida qisqa qo‘llanma.</p>
+          <span class="meta rv">4 daqiqa · Tez orada</span>
+        </article>
+        <article class="jc">
+          <div class="pic cr" style="--d:.24s" role="img" aria-label="Suv bo‘yida sviter kiygan odam"><svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice"><use href="#sc3"/></svg></div>
+          <p class="eyebrow rv">Ustaxona</p>
+          <h3 class="rv">Bir palto, bir tikuvchi</h3>
+          <p class="rv">Toshkentdagi kichik ustaxonada Vohat paltosi qanday tikilishi.</p>
+          <span class="meta rv">8 daqiqa · Tez orada</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mat-sec" id="matolar">
+    <div class="wrap">
+      <div class="mat-head">
+        <p class="eyebrow rv">Matolar</p>
+        <h2 class="h2 rv" style="--d:.08s;margin-top:16px">Har bir mato <em>gramm</em>da yozilgan</h2>
+        <p class="rv" style="--d:.16s">Zichlik kvadrat metrdagi grammda o‘lchanadi. Ro‘yxatdan birini tanlang va to‘qima namunasini ko‘ring.</p>
+      </div>
+      <div class="mat-grid">
+        <ul id="matList">
+          <li class="rv"><button class="mrow on" type="button" data-w1="#F3F3F1" data-w2="#D2D2CF" data-fg="#111111" data-name="Paxta poplin" data-g="140"><span class="n">Paxta poplin</span><span class="d">Farg‘ona vodiysi paxtasi, nafas oladi</span><span class="g"><span data-count="140">140</span> g/m²</span></button></li>
+          <li class="rv"><button class="mrow" type="button" data-w1="#BDBDBA" data-w2="#A9A9A6" data-fg="#111111" data-name="Lyon" data-g="190"><span class="n">Lyon</span><span class="d">Yuvilgan sari yumshoq tutiladi</span><span class="g"><span data-count="190">190</span> g/m²</span></button></li>
+          <li class="rv"><button class="mrow" type="button" data-w1="#2A2A2A" data-w2="#363636" data-fg="#F3F3F1" data-name="Merinos trikotaj" data-g="320"><span class="n">Merinos trikotaj</span><span class="d">Ingichka 18 mikronli tola, tikmaydi</span><span class="g"><span data-count="320">320</span> g/m²</span></button></li>
+          <li class="rv"><button class="mrow" type="button" data-w1="#0A0A0A" data-w2="#1A1A1A" data-fg="#F3F3F1" data-name="Kanvas" data-g="480"><span class="n">Kanvas</span><span class="d">Qalin, bo‘yog‘i uzoq saqlanadi</span><span class="g"><span data-count="480">480</span> g/m²</span></button></li>
+          <li class="rv"><button class="mrow" type="button" data-w1="#111111" data-w2="#222222" data-fg="#F3F3F1" data-name="Yung drap" data-g="520"><span class="n">Yung drap</span><span class="d">Zich, sovuqdan himoya qiladi</span><span class="g"><span data-count="520">520</span> g/m²</span></button></li>
+        </ul>
+        <div class="swatch" id="swatch" aria-live="polite">
+          <div class="cap"><b id="swName">Paxta poplin · 140 g/m²</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta sec-cobalt on-dark" id="aloqa">
+    <div class="sun" id="sun" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="in">
+        <p class="eyebrow rv">Yangi tomchi · 20-noyabr</p>
+        <h2 class="h2 rv" style="--d:.08s">Yangi buyumlarni <em>birinchi</em> bo‘lib ko‘ring</h2>
+        <form id="news" novalidate class="rv" style="--d:.16s">
+          <label for="email">Elektron pochta</label>
+          <input id="email" name="email" type="email" placeholder="ism@pochta.uz" autocomplete="email" required>
+          <button class="btn" type="submit">Xabar olish</button>
+        </form>
+        <p class="msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cols">
+      <div><h3>Do‘kon</h3><ul><li><a href="#kolleksiya">Kolleksiya</a></li><li><a href="#lookbook">Lookbook</a></li><li><a href="#jurnal">Jurnal</a></li><li><a href="#matolar">Matolar</a></li></ul></div>
+      <div><h3>Brend</h3><ul><li><a href="#falsafa">Falsafa</a></li><li><a href="#aloqa">Yangiliklar</a></li></ul></div>
+      <div><h3>Aloqa</h3><ul><li>salom@sahro.studio</li><li>Toshkent, O‘zbekiston</li></ul></div>
+    </div>
+    <div class="foot-word" aria-hidden="true"><span>S</span><span>A</span><span>H</span><span>R</span><span>O</span></div>
+    <div class="foot-end"><span>© 2026 SAHRO</span><span>Toshkentda tikilgan</span></div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Savat" aria-hidden="true">
+  <header><h2>Savat</h2><button class="cartbtn" id="closeCart" type="button">Yopish</button></header>
+  <ul id="cartList"></ul>
+  <div class="empty" id="cartEmpty"><p>Savat hozircha bo‘sh. Kolleksiyadan buyum tanlang.</p><a class="btn ghost sm" href="#kolleksiya" id="toColl">Kolleksiyaga o‘tish</a></div>
+  <footer id="cartFoot" hidden><div class="tot"><span>Jami</span><span id="cartTotal">0 so‘m</span></div><button class="btn" id="checkout" type="button">To‘lovga o‘tish</button></footer>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
